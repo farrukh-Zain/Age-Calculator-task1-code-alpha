@@ -7,25 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
-        <h1>Farrukh</h1>
-        <br>
-        <h2>Age Calculator</h2>
-    <div class="parent">
-        <div class="inp">
-            <input type="date" id="birthdateInput" placeholder="YYYY-MM-DD">
-            <button onclick="calculateAge()">Calculate</button>
-        </div>
+   
+    <h2>Age Calculator</h2>
 
-        <!-- Display Result -->
-        <ul>
-            <li><span id="years">00</span>years</li>
-            <li><span id="months">00</span>months</li>
-            <li><span id="days">00</span>days</li>
-            <li><span id="hours">00</span>hours</li>
-            <li><span id="minutes">00</span>minutes</li>
-            <li><span id="seconds">00</span>seconds</li>
-        </ul>
+<div class="parent">
+    <div class="inp">
+        <input type="date" id="birthdateInput" placeholder="YYYY-MM-DD">
+        <button onclick="collectUserName()">Calculate</button>
     </div>
+
+    <!-- Display Result -->
+    <ul>
+        <li><span id="years">00</span>years</li>
+        <li><span id="months">00</span>months</li>
+        <li><span id="days">00</span>days</li>
+        <li><span id="hours">00</span>hours</li>
+        <li><span id="minutes">00</span>minutes</li>
+        <li><span id="seconds">00</span>seconds</li>
+    </ul>
+
+</div>
+
+     <!-- Display User's Name -->
+    <div id="userNameDisplay" class="user-name"></div>
+
+    
 
         <script src="script.js"></script>
 </body>

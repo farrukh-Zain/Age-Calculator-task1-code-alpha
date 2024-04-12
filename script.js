@@ -1,3 +1,14 @@
+function collectUserName() {
+    const userName = prompt("Please enter your name:");
+    
+    if (userName !== null && userName.trim() !== "") {
+        document.getElementById('userNameDisplay').textContent = `${userName} AGE`;
+    }
+    
+    // Now calculate age after getting the user's name
+    calculateAge();
+}
+
 function calculateAge() {
     const birthdateInput = document.getElementById('birthdateInput').value;
     const birthdate = new Date(birthdateInput);
@@ -22,6 +33,3 @@ function calculateAge() {
 
     setTimeout(calculateAge, 1000); // Update every second
 }
-
-// Initial calculation when page loads
-calculateAge();
